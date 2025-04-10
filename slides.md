@@ -1,5 +1,5 @@
 ---
-background: /assets/image_atelier.webp
+background: /assets/atelier.png
 theme: seriph
 title: SkillFusion
 description: Présentation du Sprint 1
