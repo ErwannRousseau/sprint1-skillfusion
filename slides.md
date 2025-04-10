@@ -44,7 +44,7 @@ layout: two-cols
 
 - Setup du projet (frontend & backend)
 - Docker + Docker Compose
-- CI/CD via GitHub Actions
+- CI/CD avec GitHub Actions
 
 🖥 Pages principales :
 
@@ -61,10 +61,9 @@ layout: two-cols
 - Course
 - Category
 
-🧙‍♂️ Backend :
+🧙‍♂️ Logic authentification backend :
 
-- signup
-- login
+- JWT (signup et login)
 </div>
 
 ---
@@ -75,9 +74,9 @@ layout: two-cols
 
 - Conteneurisation avec Docker
 - Pipeline CI fonctionnelle pour le frontend
-- Pages fonctionnelles (home, login, register)
-- Backend opérationnel (Nest.js + PostgreSQL)
 - Setup Eslint et Jest pour le frontend
+- Pages fonctionnelles (home, login, register)
+- Backend opérationnel (Nest.js + Prisma + PostgreSQL)
 - CRUD opérationnel (user, course, category)
 
 ---
@@ -137,7 +136,8 @@ La demo:
 - Toasts de feedback
 - Loaders (états de chargement)
 - Gestion des erreurs
-- Eslint + mettre en place la CI pour le backend
+- Eslint + CI pour le backend
+- Améliorer la CI pour le frontend
 
 📌 Points ajoutés à la backlog — on reste focus sur le MVP !
 
@@ -165,11 +165,22 @@ layout: two-cols
 ::right::
 
 <v-click>
-
 Solutions pour la redirection (+1h):
+</v-click>
+
+<v-click>
+
+Erreur :
+```bash
+NEXT_REDIRECT
+```
+</v-click>
+
+<v-click>
 
 ````md magic-move
 //step 1
+
 
 ```ts {*|13}
 export async function registerAction(
@@ -193,7 +204,7 @@ export async function registerAction(
 
 // step 2
 
-```ts {17|*}
+```ts {16|*}
 export async function registerAction(
   _prevState: RegisterFormState,
   data: FormData,
@@ -220,7 +231,7 @@ export async function registerAction(
 
 ## Prochain sprint 🔜
 
-📅 Planning le lundi matin
+📅 Sprint Planning le lundi matin
 
 Prochaines priorités envisagées :
 
