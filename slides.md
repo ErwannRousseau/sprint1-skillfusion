@@ -72,7 +72,7 @@ layout: two-cols
 
 🎉 Tout ce qui était prévu a été réalisé !
 
-- Conteneurisation avec Docker
+- Conteneurisation de nos services avec Docker
 - Pipeline CI fonctionnelle pour le frontend
 - Setup Eslint et Jest pour le frontend
 - Pages fonctionnelles (home, login, register)
@@ -133,9 +133,8 @@ La demo:
 
 🔁 Améliorations visuelles et techniques :
 
-- Toasts de feedback
-- Loaders (états de chargement)
-- Gestion des erreurs
+- Toasts de feedback (succès/erreur)
+- Loaders (états de chargement inscription/login)
 - Eslint + CI pour le backend
 - Améliorer la CI pour le frontend
 
